@@ -1,0 +1,119 @@
+.navbar-brand {
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif, Arial, 'Arial Narrow';
+    
+}
+
+.navbar-nav a{
+    position: relative;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.navbar-nav a:hover{
+color: #e9a81e;
+
+}
+.navbar-nav a::after{
+    content: "";
+    position: absolute;
+    background-color: #218b89;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.navbar-nav a:hover::after{
+    width: 100%;
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-collapse {
+        margin-right: 200px;
+    }
+}
+
+/* navbar End*/
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#eefff9 0%, #ffccc1 49%, #dcdbff 100%);
+    padding: 0 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header h1 {
+    /* font-size: 13vw; */
+    font-size: 10vw;
+    line-height: 11vw;
+}
+
+/*------- animation --------*/
+.header h1 span {
+    background: linear-gradient(#000, #000);
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 0%;
+}
+
+.header h1 span:first-child {
+    animation: textcolor1 2s linear infinite alternate;
+}
+
+.header h1 span:nth-child(3) {
+    animation: textcolor2 2s linear infinite alternate;
+}
+
+.header h1 span:last-child {
+    animation: textcolor3 2s linear infinite alternate;
+}
+
+@keyframes textcolor1 {
+    0% {
+        background-size: 0%;
+    }
+
+    40% {
+        background-size: 100%;
+    }
+
+    100% {
+        background-size: 100%;
+    }
+}
+
+@keyframes textcolor2 {
+    0% {
+        background-size: 0%;
+    }
+
+    40% {
+        background-size: 100%;
+    }
+
+    100% {
+        background-size: 100%;
+    }
+}
+
+@keyframes textcolor3 {
+    0% {
+        background-size: 0%;
+    }
+
+    40% {
+        background-size: 100%;
+    }
+
+    100% {
+        background-size: 100%;
+    }
+}
+
+/*------- animation End--------*/
+
